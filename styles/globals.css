@@ -8,6 +8,11 @@ body {
   padding: 0;
 }
 
+input {
+  color: #fff;
+  font-size: 20px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -17,15 +22,16 @@ a {
   box-sizing: border-box;
 }
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-width: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 
 .header {
   position: relative;
   background-color: #19191f;
-  max-width: fit-content;
+  width: 100%;
+  bottom: 30px;
 }
 
 .header #logo {
@@ -48,22 +54,20 @@ main {
   color: white;
 }
 
-.header #search {
-  display: inline;
-  flex-direction: row;
-  margin: 0 0 0 1709px;
-  border: solid 2px #000;
-}
-
 .container {
+  max-width: 2000px;
   margin: 50px 50px;
-  max-width: 1400px;
+  position: relative;
 }
 
 .ads {
   display: grid;
+  max-width: fit-content;
+  position: relative;
+  left: 50px;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 3px;
+  grid-row-gap: 55px;
+  grid-column-gap: 90px;
 }
 
 /* Scaling */
@@ -154,16 +158,14 @@ main {
 }
 
 .adContainer {
-  max-width: 1200px;
-  margin: -250px 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .adContainer .sellerContainer {
   position: relative;
-  left: 1000px;
-  top: 280px;
+  left: 960px;
+  bottom: 27px;
 }
 
 .sellerContainer {
@@ -171,7 +173,6 @@ main {
   border: solid 0.5px rgba(44, 43, 43, 0.274);
   border-radius: 2px;
   display: flex;
-  margin-left: 150px;
 }
 
 #sellerLogo {
@@ -205,6 +206,9 @@ main {
 .swiperContainer {
   max-width: 900px;
   margin: 0 50px 0 50px;
+  position: relative;
+  right: 350px;
+  bottom: 25px;
 }
 
 .swiperContainer #imagesSingleAd {
@@ -214,18 +218,13 @@ main {
   border-radius: 4px;
 }
 
-/* .desc #name {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-} */
-
 .desc #price {
   display: flex;
+  position: relative;
   margin-left: 820px;
   margin-top: 5px;
+  right: 50px;
+  bottom: 30px;
   color: #2901dd;
   font-size: 25px;
   font-weight: bold;
@@ -242,43 +241,42 @@ main {
   display: flex;
 }
 
+.specsSingleAd {
+  display: flex;
+  position: relative;
+  bottom: 80px;
+  right: 22px;
+  flex-direction: column;
+  font-size: 18px;
+}
+
 .specsSingleAd #infoCarSingle {
   display: inline;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   margin-left: 10px;
 }
 
 .moreInfoContainer {
-  display: flex;
+  margin-bottom: 30px;
   position: relative;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 35px 0 0 25px;
+  bottom: 45px;
 }
 
-.moreInfoContainer #singleInfo {
-  display: flex;
-  top: 20px;
-  left: 80px;
+.moreInfoContainer #additionalInfo {
+  top: 680px;
+  font-weight: bold;
+}
+
+#singleInfo {
+  max-width: 989px;
   font-size: 17px;
 }
-/* BIKE page */
-.headerBike {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  background-size: cover;
-}
 
-.headerBike #homeButton {
-  display: flex;
+.moreInfoAboutCar {
   position: relative;
-  color: #000;
+  bottom: 70px;
   font-weight: bold;
-  font-style: "Roboto", sans-serif;
-  font-size: 20px;
-  margin-right: 1850px;
+  color: #2901dd;
+  text-decoration: underline;
 }

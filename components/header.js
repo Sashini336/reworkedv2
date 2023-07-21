@@ -9,7 +9,6 @@ export default function Header() {
         <a id="homeButton" class="link" href="/bikes">
           Motorcycles
         </a>
-        <input id="search" type="search" placeholder="Search..."></input>
       </div>
     </header>
   );

@@ -1,10 +1,11 @@
 .footer {
-  margin-top: auto;
 }
 
 .footer-container {
   display: flex;
-  background-color: #000;
+  position: relative;
+  bottom: 0;
+  background-color: #19191f;
   color: #fff;
 }
 

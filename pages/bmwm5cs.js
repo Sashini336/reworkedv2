@@ -16,6 +16,7 @@ export default function CarAd(props) {
     price: "195 000 лв.",
     date: "май 2020г.",
     engine: "Бензинов",
+    category: "Седан",
     horsepower: "780кс",
     trans: "Автоматична",
     eco: "Евро 6",
@@ -110,34 +111,46 @@ export default function CarAd(props) {
             <div className="desc">
               {/* <p id="name">{data.title}</p> */}
               <p id="price">{data.price}</p>
-              <div className="singleAdContainer"></div>
-              <ul className="specsSingleAd">
-                <li>
-                  Дата на производство : <p id="infoCarSingle">{data.date}</p>
-                </li>
-                <li>
-                  Тип двигател: <p id="infoCarSingle">{data.engine}</p>
-                </li>
-                <li>
-                  Мощност: <p id="infoCarSingle">{data.horsepower}</p>
-                </li>
-                <li>
-                  Евростандарт: <p id="infoCarSingle">{data.eco}</p>
-                </li>
-                <li>
-                  Скоростна кути: <p id="infoCarSingle">{data.trans}</p>
-                </li>
-                <li>
-                  Пробег: <p id="infoCarSingle">{data.millage}</p>
-                </li>
-                <li>
-                  Цвят: <p id="infoCarSingle">{data.color}</p>
-                </li>
-              </ul>
-            </div>
-            <div className="moreInfoContainer">
-              Допълнителна Информация:
-              <p id="singleInfo">{data.moreInfo}</p>
+              <div className="singleAdContainer">
+                <ul className="specsSingleAd">
+                  <li>
+                    Дата на производство : <p id="infoCarSingle">{data.date}</p>
+                  </li>
+                  <li>
+                    Тип двигател: <p id="infoCarSingle">{data.engine}</p>
+                  </li>
+                  <li>
+                    Мощност: <p id="infoCarSingle">{data.horsepower}</p>
+                  </li>
+                  <li>
+                    Скоростна кути: <p id="infoCarSingle">{data.trans}</p>
+                  </li>
+                  <li>
+                    Категория: <p id="infoCarSingle">{data.category}</p>
+                  </li>
+                  <li>
+                    Евростандарт: <p id="infoCarSingle">{data.eco}</p>
+                  </li>
+                  <li>
+                    Пробег: <p id="infoCarSingle">{data.millage}</p>
+                  </li>
+                  <li>
+                    Цвят: <p id="infoCarSingle">{data.color}</p>
+                  </li>
+                </ul>
+              </div>
+              <div className="moreInfoAboutCar">
+                <a
+                  href="https://www.auto-data.net/bg/bmw-m5-f90-lci-facelift-2020-cs-4.4-v8-635hp-xdrive-steptronic-42156"
+                  target="_blank"
+                >
+                  Технически характеристики !
+                </a>
+              </div>
+              <div className="moreInfoContainer">
+                <p id="additionalInfo"> Допълнителна Информация: </p>
+                <p id="singleInfo">{data.moreInfo}</p>
+              </div>
             </div>
           </div>
         </div>

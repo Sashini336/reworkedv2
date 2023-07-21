@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import "../styles/bikepage.css";
 import "../styles/footer.css";
+import "../styles/searchbar.css";
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
 import "swiper/css";

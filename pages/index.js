@@ -2,6 +2,7 @@ import Head from "next/head";
 import Ad from "../components/ad";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import React, { useState } from "react";
 
 const data = [
   {
@@ -79,6 +80,14 @@ const data = [
 ];
 
 export default function Home() {
+  const [searchField, setSearchField] = useState("");
+  const handleChange = (e) => {
+    setSearchField(e.target.value);
+  };
+
+  const filteredCars = data.filter((car) => {
+    return car.title.toLowerCase().startsWith(searchField.toLowerCase());
+  });
   return (
     <div>
       <Head>
@@ -91,8 +100,19 @@ export default function Home() {
       </Head>
       <main>
         <div className="container">
+          <div className="searchContainer">
+            <form action="" className="searchBar">
+              <input
+                className="search"
+                type="search"
+                placeholder="Търсене"
+                value={searchField}
+                onChange={handleChange}
+              ></input>
+            </form>
+          </div>
           <div className="ads">
-            {data.map((ads) => {
+            {filteredCars.map((ads) => {
               return (
                 <Ad
                   title={ads.title}
@@ -104,7 +124,7 @@ export default function Home() {
                 ></Ad>
               );
             })}
-            {data.map((ads) => {
+            {filteredCars.map((ads) => {
               return (
                 <Ad
                   title={ads.title}
