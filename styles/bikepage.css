@@ -1,0 +1,29 @@
+.headerBike {
+  display: flex;
+  align-items: center;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.headerBike #homeButton {
+  display: flex;
+  position: relative;
+  color: #000;
+  font-weight: bold;
+  font-style: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-right: 1850px;
+}
+
+.wholePageBike {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.containerBike {
+  margin: 50px 50px;
+  max-width: 2000px;
+}
