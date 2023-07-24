@@ -21,7 +21,7 @@
 .searchBar,
 .searchBar input:focus,
 .searchBar input:valid {
-  width: 75%;
+  width: 100%;
 }
 
 .searchBar input:focus,
@@ -30,8 +30,9 @@
 }
 
 .searchBar {
-  max-width: 450px;
+  max-width: 320px;
   display: flex;
+  margin-bottom: 95px;
 }
 
 .searchBar input {
